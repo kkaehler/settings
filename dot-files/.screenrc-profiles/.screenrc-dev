@@ -1,0 +1,13 @@
+# Start screen and populate tabs.
+# Run with: screen -c ~/.screenrc-local
+source .screenrc
+
+# Start up a few commonly used window tabs.
+screen -t python 2
+screen -t hostconfig 3
+screen -t web 4
+screen -t psql 5
+screen -t dev_tools 6
+screen -t third_party 7
+
+defscrollback 10000

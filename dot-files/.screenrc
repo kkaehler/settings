@@ -1,0 +1,49 @@
+# Remove some stupid / dangerous key bindings.
+bind f
+bind ^f
+bind k
+bind ^k
+bind h
+bind ^h
+bind x
+bind ^x
+bind .
+bind ^\
+bind \\
+# Make a few of them better.
+bind 'K' kill
+bind 'I' login on
+bind 'O' login off
+bind 'L' lockscreen
+
+# 'C-a - N' swtches to tab N + 10.
+# E.g., 'C-a - 2' switches to tab 12.
+bind -c lotsatabs 0 select 10
+bind -c lotsatabs 1 select 11
+bind -c lotsatabs 2 select 12
+bind -c lotsatabs 3 select 13
+bind -c lotsatabs 4 select 14
+bind -c lotsatabs 5 select 15
+bind -c lotsatabs 6 select 16
+bind - command -c lotsatabs
+
+# Set the command character to something that won't interfere with
+# emacs/readline: C-z. To send Ctrl-z to the terminal application
+# type C-z z.
+escape ^Zz
+
+startup_message off
+caption always "%{-b ck}%-w%{+b kc}%50>%n %t%{-b ck}%+w %=[%{yk}%H%{-}] %Y/%m/%d %c "
+
+# Detach on hangup.
+autodetach on
+
+# Default size of the scrollback buffer.
+defscrollback 1000
+
+# Monitor all windows for activity by default (C-z M to toggle).
+defmonitor on
+
+# Start up a few commonly used window tabs.
+screen -t emacs 0 emacs23 -nw
+screen -t main 1

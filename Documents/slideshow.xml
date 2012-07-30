@@ -1,0 +1,22 @@
+<background>
+  <starttime>
+    <year>2012</year>
+    <month>7</month>
+    <day>1</day>
+    <hour>1</hour>
+    <minute>1</minute>
+    <second>1</second>
+  </starttime>
+  <static>
+    <duration>1</duration>
+  </static>
+  <static>
+    <duration>1</duration>
+    <file>/home/kkaehler/Pictures/Slideshow/city-time-lapse-1.jpg</file>
+  </static>
+  <static>
+    <duration>1</duration>
+    <file>/home/kkaehler/Pictures/Slideshow/city-time-lapse-57.jpg</file>
+  </static>
+</background>
+

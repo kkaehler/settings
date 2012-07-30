@@ -1,0 +1,12 @@
+# Start screen and populate tabs.
+# Run with: screen -c ~/.screenrc-local
+source .screenrc
+
+# Try and override screenrc defaults
+screen -t READ 0
+# Start up a few commonly used window tabs.
+screen -t staging-fe 2
+screen -t staging-db 3
+
+
+defscrollback 10000
